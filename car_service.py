@@ -424,7 +424,6 @@ class CarServiceApp(tk.Tk):
 
     def collect(self):
         self.valid_date()
-        self.search_plate()
         km=self.km.get().replace(",","").strip()
         if not self.placa.get().strip(): raise ValueError("Ingrese la placa.")
         if not km.isdigit(): raise ValueError("Kilometraje inválido.")
